@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+
+        <!-- Email Label -->
+
+        <EditText android:id="@+id/input_Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+
+        <EditText android:id="@+id/input_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/input_Date"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:hint="Date" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dpcal"
+
+                android:layout_toRightOf="@+id/input_Date"
+                android:src="@drawable/iconcalendar"/>
+        </RelativeLayout>
+
+        <!-- Password Label -->
+
+
+        <EditText android:id="@+id/input_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HH:MM" />
+
+
+
+        <Button
+            android:id="@+id/btn_Add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/buttunselector"
+            android:text="ADD"/>
+
+        >
+
+    </LinearLayout>
+</LinearLayout>

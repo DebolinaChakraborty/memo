@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"  android:stretchColumns="*"
+    android:weightSum="10"
+    android:background="@drawable/back"
+    >
+    <!-- Row 1 with single column -->
+
+
+    <!-- Row 2 with 3 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="3">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/itemadd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/imgbill"
+            android:id="@+id/imgpurchase"
+
+            android:background="#FFFFFF"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/users"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/imgord"
+            android:id="@+id/imggrn"
+            android:background="#FFFFFF"
+            android:layout_column="18" />
+
+    </TableRow>
+    <!-- Row 3 with 2 columns -->
+
+
+
+
+</TableLayout>
